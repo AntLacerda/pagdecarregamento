@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Loops</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <main>
+        
+        <form>
+            <div class="alinhamento_maior">
+                <div>
+                    <img src="img.png" alt="" class="imagem" id="imagem">
+                </div>
+                <div class="alinhamento">
+                    <h1>Contato</h1>
+                    <p>Entre em contato conosco, será um prazer lhe responder!</p>
+                    <label for="">Nome: </label>
+                    <input type="text" placeholder="Digite seu nome...">
+        
+                    <label for="">Email: </label>
+                    <input type="email" placeholder="exemplo@gmail.com">
+        
+                    <label for="">Contato: </label>
+                    <input type="text" placeholder="(99) 9.9999-9999">
+        
+                    <label for="">Assunto: </label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite a sua mensagem"></textarea>
+        
+                    <input type="submit" class="subimeter"></input>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script>
+        let obj = document.getElementById("imagem");
+
+        function mover(){
+            obj.style.marginTop="120px";
+            obj.style.marginLeft="50px";
+            obj.style.marginBottom="10px";
+        }
+
+        function voltar(){
+            obj.style.marginTop="125px";
+            obj.style.marginLeft="40px";
+            obj.style.marginBottom="0px";
+        }
+
+        setInterval(mover, 2000);
+        setInterval(voltar, 1500);
+    </script>
+</body>
+</html>
